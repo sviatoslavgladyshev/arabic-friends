@@ -511,6 +511,17 @@ body.presenter #pnotes{display:block;position:fixed;right:0;bottom:0;width:40%;t
 </nav>
 
 <script>
+// Theo is German and lives in Vienna, Austria.
+const theoSlide = document.getElementById('theo');
+if (theoSlide) {
+  [...theoSlide.querySelectorAll('p')].forEach(p => {
+    if (p.textContent.trim() === 'البلد') p.textContent = 'بلد الإقامة';
+    if (p.textContent.trim() === 'ألمانيا') p.textContent = 'النمسا';
+  });
+  const theoNotes = theoSlide.querySelector('aside');
+  if (theoNotes) theoNotes.textContent = theoNotes.textContent.replace('هو من ألمانيا، ويسكن في فيينا', 'هو ألماني، ويسكن في فيينا في النمسا');
+}
+
 (() => {
   const deck = document.getElementById('deck');
   const slides = [...deck.querySelectorAll('section.slide')];
