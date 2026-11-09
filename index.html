@@ -42,6 +42,17 @@ body.full #deck{border-radius:0;box-shadow:none}
 .slide aside{display:none}
 .slide .embed{background:#fff;pointer-events:none}
 
+/* ---------- friend profile slides ---------- */
+#alex,#theo,#sumed,#pyotr,#zsofi{background:linear-gradient(110deg,#f8f9fa 0%,#fff 58%)!important}
+#alex>img,#theo>img,#sumed>img,#pyotr>img,#zsofi>img{position:absolute!important;left:128px!important;top:206px!important;bottom:auto!important;width:420px!important;height:540px!important;object-fit:cover!important;border-radius:32px!important;box-shadow:0 20px 60px rgba(32,33,36,.2)!important;border:10px solid #fff;z-index:1}
+#alex>div:nth-of-type(2),#theo>div:nth-of-type(2),#sumed>div:nth-of-type(2),#pyotr>div:nth-of-type(2),#zsofi>div:nth-of-type(2){display:grid!important;grid-template-columns:minmax(0,1fr) minmax(520px,600px);gap:44px;align-items:center;flex:1;padding-left:480px;direction:rtl}
+#alex>div:nth-of-type(2)>div:first-child,#theo>div:nth-of-type(2)>div:first-child,#sumed>div:nth-of-type(2)>div:first-child,#pyotr>div:nth-of-type(2)>div:first-child,#zsofi>div:nth-of-type(2)>div:first-child{min-width:0}
+#alex>div:nth-of-type(2)>div:last-child,#theo>div:nth-of-type(2)>div:last-child,#sumed>div:nth-of-type(2)>div:last-child,#pyotr>div:nth-of-type(2)>div:last-child,#zsofi>div:nth-of-type(2)>div:last-child{width:auto!important}
+#alex>div:nth-of-type(2) h1,#theo>div:nth-of-type(2) h1,#sumed>div:nth-of-type(2) h1,#pyotr>div:nth-of-type(2) h1,#zsofi>div:nth-of-type(2) h1{font-size:170px!important;line-height:1!important;letter-spacing:-.04em}
+#alex>div:nth-of-type(2) p,#theo>div:nth-of-type(2) p,#sumed>div:nth-of-type(2) p,#pyotr>div:nth-of-type(2) p,#zsofi>div:nth-of-type(2) p{max-width:600px}
+#alex>div:nth-of-type(2) span,#theo>div:nth-of-type(2) span,#sumed>div:nth-of-type(2) span,#pyotr>div:nth-of-type(2) span,#zsofi>div:nth-of-type(2) span{box-shadow:0 5px 14px rgba(32,33,36,.05)}
+@media (max-width:1200px){#alex>img,#theo>img,#sumed>img,#pyotr>img,#zsofi>img{left:80px!important;width:360px!important;height:470px!important}#alex>div:nth-of-type(2),#theo>div:nth-of-type(2),#sumed>div:nth-of-type(2),#pyotr>div:nth-of-type(2),#zsofi>div:nth-of-type(2){padding-left:410px;grid-template-columns:minmax(0,1fr) minmax(440px,560px);gap:28px}}
+
 /* ---------- surfaces ---------- */
 .glass{background:rgba(30,30,32,.8);-webkit-backdrop-filter:saturate(180%) blur(30px);backdrop-filter:saturate(180%) blur(30px);
   box-shadow:0 0 0 .5px rgba(255,255,255,.14),0 16px 48px rgba(0,0,0,.45);color:var(--ink)}
